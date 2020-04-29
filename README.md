@@ -1,7 +1,7 @@
 # ZedBoard Image Processing Pipeline
 This is an FPGA based image processing pipeline. It was implemented using a zedboard and is capable of accelerating (or directly implementing) many openCV functions.
 
-<img src="user_docs/imgs/zedboard.png" alt="zedboard" style="zoom:50%;" />
+<img src="user_docs/imgs/zedboard.png" alt="zedboard" style="zoom:30%;" />
 
 ## Introduction
 
@@ -9,7 +9,7 @@ This platform makes the creation and the use of basic video filters really simpl
 
 
 
-<img src="user_docs/imgs/logicDiagram.png" alt="logiDiagram" style="zoom:90%;" />
+<img src="user_docs/imgs/logicDiagram.png" alt="logiDiagram" style="zoom:50%;" />
 
 
 
