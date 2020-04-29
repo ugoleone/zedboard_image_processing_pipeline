@@ -1,0 +1,125 @@
+
+
+================================================================
+== Vivado HLS Report for 'contatore_no_io'
+================================================================
+* Date:           Sun Mar  1 22:30:47 2020
+
+* Version:        2018.3.1 (Build 2489210 on Tue Mar 26 04:40:43 MDT 2019)
+* Project:        counter
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.794|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.79>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %led_output_V), !map !29"   --->   Operation 2 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([16 x i8]* @contatore_no_io_str) nounwind"   --->   Operation 3 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %led_output_V, [8 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str15, i32 0, i32 0, [1 x i8]* @p_str15, [1 x i8]* @p_str15, [1 x i8]* @p_str15, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str15, [1 x i8]* @p_str15) nounwind" [counter/contatore_no_io.cpp:7]   --->   Operation 4 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str26, i32 0, i32 0, [1 x i8]* @p_str15, i32 0, i32 0, [1 x i8]* @p_str15, [1 x i8]* @p_str15, [1 x i8]* @p_str15, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str15, [1 x i8]* @p_str15) nounwind" [counter/contatore_no_io.cpp:8]   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%counter_value_load = load i32* @counter_value, align 4" [counter/contatore_no_io.cpp:12]   --->   Operation 6 'load' 'counter_value_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (2.55ns)   --->   "%counter_value_assign = add i32 %counter_value_load, 1" [counter/contatore_no_io.cpp:12]   --->   Operation 7 'add' 'counter_value_assign' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (2.47ns)   --->   "%tmp = icmp ugt i32 %counter_value_assign, 23999999" [counter/contatore_no_io.cpp:13]   --->   Operation 8 'icmp' 'tmp' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%led_status_V_load = load i1* @led_status_V, align 1" [counter/contatore_no_io.cpp:14]   --->   Operation 9 'load' 'led_status_V_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.76ns)   --->   "br i1 %tmp, label %0, label %._crit_edge10" [counter/contatore_no_io.cpp:13]   --->   Operation 10 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 11 [1/1] (0.97ns)   --->   "%val_assign = xor i1 %led_status_V_load, true" [counter/contatore_no_io.cpp:14]   --->   Operation 11 'xor' 'val_assign' <Predicate = (tmp)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "store i1 %val_assign, i1* @led_status_V, align 1" [counter/contatore_no_io.cpp:14]   --->   Operation 12 'store' <Predicate = (tmp)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.76ns)   --->   "br label %._crit_edge10" [counter/contatore_no_io.cpp:16]   --->   Operation 13 'br' <Predicate = (tmp)> <Delay = 1.76>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%counter_value_new = phi i32 [ 0, %0 ], [ %counter_value_assign, %codeRepl ]" [counter/contatore_no_io.cpp:12]   --->   Operation 14 'phi' 'counter_value_new' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%led_status_V_loc = phi i1 [ %val_assign, %0 ], [ %led_status_V_load, %codeRepl ]" [counter/contatore_no_io.cpp:14]   --->   Operation 15 'phi' 'led_status_V_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %led_output_V, i1 %led_status_V_loc)" [counter/contatore_no_io.cpp:17]   --->   Operation 16 'write' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "store i32 %counter_value_new, i32* @counter_value, align 4" [counter/contatore_no_io.cpp:12]   --->   Operation 17 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "ret void" [counter/contatore_no_io.cpp:18]   --->   Operation 18 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 6.79ns
+The critical path consists of the following:
+	'load' operation ('counter_value_load', counter/contatore_no_io.cpp:12) on static variable 'counter_value' [8]  (0 ns)
+	'add' operation ('counter_value_assign', counter/contatore_no_io.cpp:12) [9]  (2.55 ns)
+	'icmp' operation ('tmp', counter/contatore_no_io.cpp:13) [10]  (2.47 ns)
+	multiplexor before 'phi' operation ('counter_value_new', counter/contatore_no_io.cpp:12) with incoming values : ('counter_value_assign', counter/contatore_no_io.cpp:12) [18]  (1.77 ns)
+	'phi' operation ('counter_value_new', counter/contatore_no_io.cpp:12) with incoming values : ('counter_value_assign', counter/contatore_no_io.cpp:12) [18]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_v_tpg_0_0_synth_1" LaunchDir="C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_vdma_0_0_synth_1" LaunchDir="C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_axi_vdma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_ov7670_axi_stream_ca_0_0_synth_1" LaunchDir="C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_ov7670_axi_stream_ca_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_1_v_tpg_0_0_synth_1"/>
+		<Parent Id="design_1_axi_vdma_0_0_synth_1"/>
+		<Parent Id="design_1_ov7670_axi_stream_ca_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

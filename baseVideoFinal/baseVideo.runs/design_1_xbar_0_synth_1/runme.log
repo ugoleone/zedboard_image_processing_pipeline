@@ -1,0 +1,19 @@
+
+*** Running vivado
+    with args -log design_1_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+
+
+****** Vivado v2018.3.1 (64-bit)
+  **** SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+  **** IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/Progetti/counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/Progetti/gaussian'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/Progetti/sobel'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 260.820 ; gain = 8.172
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = 507c3f81ced23249.
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 29 17:51:00 2020...

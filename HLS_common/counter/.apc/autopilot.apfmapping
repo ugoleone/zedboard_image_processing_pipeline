@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="contatore_no_io.h" path="C:\Users\ugo\Desktop\Progetti\counter\contatore_no_io.h"/>
+    <originFiles name="contatore_no_io.cpp" path="C:\Users\ugo\Desktop\Progetti\counter\contatore_no_io.cpp"/>
+    <originFiles name="contatore_axi.h" path="C:\Users\ugo\Desktop\Progetti\counter\contatore_axi.h"/>
+    <originFiles name="contatore_axi.cpp" path="C:\Users\ugo\Desktop\Progetti\counter\contatore_axi.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.h" path="C:\Users\ugo\Desktop\Progetti\counter\testbench.h"/>
+    <originFiles name="testbench.cpp" path="C:\Users\ugo\Desktop\Progetti\counter\testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

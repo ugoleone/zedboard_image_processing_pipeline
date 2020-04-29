@@ -1,0 +1,554 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Mar 28 16:24:23 2020
+# Process ID: 10756
+# Current directory: C:/Users/ugo/Desktop/baseVideo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9340 C:\Users\ugo\Desktop\baseVideo\baseVideo.xpr
+# Log file: C:/Users/ugo/Desktop/baseVideo/vivado.log
+# Journal file: C:/Users/ugo/Desktop/baseVideo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ugo/Desktop/baseVideo/baseVideo.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/SmartCamera-master/OV7670_Color/VIVADO_HLS'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/AXIS_Tester'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/XVES_0014/Video_Pattern_Generator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/24_bit_gen'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/OV7670_GRAYSCALE'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/Progetti/counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:axis_to_ddr_writer:1.0'. The one found in IP location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_VGA64/solution1/impl/ip' will take precedence over the same IP in location c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_AXILITE/solution1/impl/ip
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:ddr_to_axis_reader:1.0'. The one found in IP location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/impl/ip' will take precedence over the same IP in location c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/DDR/DDR_TO_AXIS_READER_VGA64/solution1/impl/ip
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:fixedio:1.0'. The one found in location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.srcs/sources_1/bd/design_1/ipshared/xilinx.com/processing_system7_v5_5/fixedio.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/fixedio.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:hpstatusctrl:1.0'. The one found in location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.srcs/sources_1/bd/design_1/ipshared/xilinx.com/processing_system7_v5_5/hpstatusctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/hpstatusctrl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:usbctrl:1.0'. The one found in location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.srcs/sources_1/bd/design_1/ipshared/xilinx.com/processing_system7_v5_5/usbctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/usbctrl.xml'
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:24 . Memory (MB): peak = 825.121 ; gain = 242.320
+update_compile_order -fileset sources_1
+INFO: [Vivado 12-4158] Exported Hardware file is out of date. Exported hardware information may be inconsistent with respect to the current state of the design. It is recommended that you re-export the design and launch SDK otherwise SDK is launched with out of date hardware system file.
+launch_sdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_25M
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:v_tpg:8.0 - v_tpg_0
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - constant_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - VGA_R
+Adding cell -- xilinx.com:ip:xlslice:1.0 - VGA_B
+Adding cell -- xilinx.com:ip:xlslice:1.0 - VGA_G
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:hls:ov7670_interface:1.0 - ov7670_interface_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - Const_0_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - Const_1
+Adding cell -- xilinx.com:hls:LF_valid_to_AXIS:1.0 - LF_valid_to_AXIS_0
+Adding cell -- Ugo:hls:ov7670_grayscale:1.0 - ov7670_grayscale_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- Ugo:hls:contatore_no_io:1.3 - contatore_no_io_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding cell -- Ugo:hls:pattern_generator_cross:3.4 - pattern_generator_cr_0
+Adding cell -- xilinx.com:ip:system_ila:1.1 - system_ila_0
+Successfully read diagram <design_1> from BD file <C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1557.348 ; gain = 0.000
+disconnect_bd_net /Const_1_dout [get_bd_ports ovReset]
+connect_bd_net [get_bd_ports ovReset] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+save_bd_design
+Wrote  : <C:\Users\ugo\Desktop\baseVideo\baseVideo.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run design_1_v_tpg_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [xilinx.com:ip:axi_vdma:6.3-155] /axi_vdma_0 
+                    To get the better performance, ensure AXI Memory Map clock frequency is greater than equal to AXI Streaming clock frequency.
+WARNING: [BD 41-927] Following properties on pin /ov7670_interface_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_PCLK 
+WARNING: [BD 41-927] Following properties on pin /contatore_no_io_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_PCLK 
+Wrote  : <C:\Users\ugo\Desktop\baseVideo\baseVideo.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXIS_tdata'(32) to net 'ov7670_grayscale_0_outStream_V_V_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXIS_tdata'(32) to net 'ov7670_grayscale_0_outStream_V_V_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_25M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tpg_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block constant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_B .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_G .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_interface_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Const_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LF_valid_to_AXIS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_grayscale_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block contatore_no_io_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pattern_generator_cr_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+Exporting to file c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/hw_handoff/design_1_system_ila_0_1.hwh
+Generated Block Design Tcl file c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/hw_handoff/design_1_system_ila_0_1_bd.tcl
+Generated Hardware Definition File c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/synth/design_1_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/m00_couplers/auto_pc .
+Exporting to file C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 1fdf948c4d3f1c4f; cache size = 144.211 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 1acbf50f176ac218; cache size = 144.211 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 144.211 MB.
+config_ip_cache: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1557.348 ; gain = 0.000
+[Sat Mar 28 17:54:10 2020] Launched design_1_v_tpg_0_0_synth_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+[Sat Mar 28 17:54:10 2020] Launched synth_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1557.348 ; gain = 0.000
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 144.211 MB.
+[Sat Mar 28 18:00:13 2020] Launched design_1_v_tpg_0_0_synth_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+[Sat Mar 28 18:00:13 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 144.211 MB.
+[Sat Mar 28 18:12:58 2020] Launched design_1_v_tpg_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_tpg_0_0_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/synth_1/runme.log
+[Sat Mar 28 18:12:59 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 412 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2375.648 ; gain = 5.648
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2375.648 ; gain = 5.648
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2375.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 118 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 104 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  SRLC32E => SRL16E: 3 instances
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:47 ; elapsed = 00:00:36 . Memory (MB): peak = 2491.969 ; gain = 707.574
+open_report: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2548.285 ; gain = 42.254
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+file copy -force C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/design_1_wrapper.sysdef C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv Ugo:hls:axisTester:1.1 axisTester_0
+WARNING: [IP_Flow 19-3432] UI File c:/Users/ugo/Desktop/AXIS_Tester/solution1/impl/ip/xgui/axisTester_v1_1.tcl does not exist
+WARNING: [IP_Flow 19-2991] No XGUI Files found 
+endgroup
+set_property location {7 2054 874} [get_bd_cells axisTester_0]
+connect_bd_net [get_bd_ports PCLK] [get_bd_pins axisTester_0/ap_clk]
+connect_bd_net [get_bd_pins axisTester_0/ap_rst_n] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { ov7670_grayscale_0_outStream_V_V } ]
+disconnect_bd_intf_net [get_bd_intf_net ov7670_grayscale_0_outStream_V_V] [get_bd_intf_pins system_ila_0/SLOT_1_AXIS]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+apply_bd_automation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2641.094 ; gain = 0.930
+endgroup
+delete_bd_objs [get_bd_intf_nets ov7670_grayscale_0_outStream_V_V]
+connect_bd_intf_net [get_bd_intf_pins axisTester_0/outputStream_V_V] [get_bd_intf_pins pattern_generator_cr_0/inStream_V_V]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axisTester_0_outputStream_V_V}]
+true
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axisTester_0_outputStream_V_V] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/PCLK" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+Debug Automation : Re-customizing System ILA block '/system_ila_0' to mode INTERFACE, with 1 new slot interface pins and 0 new probe pins. Also setting parameters on this block, corresponding to newly enabled interface pins and probe pins as specified via Debug Automation.
+Debug Automation : Connecting interface connection /axisTester_0_outputStream_V_V, to System ILA slot interface pin /system_ila_0/SLOT_1_AXIS for debug.
+endgroup
+save_bd_design
+Wrote  : <C:\Users\ugo\Desktop\baseVideo\baseVideo.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [xilinx.com:ip:axi_vdma:6.3-155] /axi_vdma_0 
+                    To get the better performance, ensure AXI Memory Map clock frequency is greater than equal to AXI Streaming clock frequency.
+WARNING: [BD 41-927] Following properties on pin /ov7670_interface_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_PCLK 
+WARNING: [BD 41-927] Following properties on pin /contatore_no_io_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_PCLK 
+validate_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2651.012 ; gain = 0.000
+reset_run design_1_system_ila_0_1_synth_1
+save_bd_design
+Wrote  : <C:\Users\ugo\Desktop\baseVideo\baseVideo.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXIS_tdata'(32) to net 'axisTester_0_outputStream_V_V_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_1_AXIS_tdata'(32) to net 'axisTester_0_outputStream_V_V_TDATA'(8) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_25M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tpg_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block constant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_B .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_G .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_interface_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Const_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LF_valid_to_AXIS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_grayscale_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block contatore_no_io_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pattern_generator_cr_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+Exporting to file c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/hw_handoff/design_1_system_ila_0_1.hwh
+Generated Block Design Tcl file c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/hw_handoff/design_1_system_ila_0_1_bd.tcl
+Generated Hardware Definition File c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/synth/design_1_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axisTester_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/m00_couplers/auto_pc .
+Exporting to file C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 1fdf948c4d3f1c4f; cache size = 144.211 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 1acbf50f176ac218; cache size = 144.211 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 144.211 MB.
+[Sat Mar 28 18:30:38 2020] Launched design_1_v_tpg_0_0_synth_1, design_1_system_ila_0_1_synth_1, design_1_axisTester_0_0_synth_1...
+Run output will be captured here:
+design_1_v_tpg_0_0_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+design_1_system_ila_0_1_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_system_ila_0_1_synth_1/runme.log
+design_1_axisTester_0_0_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_axisTester_0_0_synth_1/runme.log
+[Sat Mar 28 18:30:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2760.805 ; gain = 90.973
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 151.118 MB.
+[Sat Mar 28 18:36:43 2020] Launched design_1_v_tpg_0_0_synth_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+[Sat Mar 28 18:36:43 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 151.118 MB.
+[Sat Mar 28 18:46:02 2020] Launched design_1_v_tpg_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_tpg_0_0_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/synth_1/runme.log
+[Sat Mar 28 18:46:03 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/runme.log
+file copy -force C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/design_1_wrapper.sysdef C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ugo/Desktop/AXIS_Tester/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/SmartCamera-master/OV7670_Color/VIVADO_HLS'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/AXIS_Tester'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/XVES_0014/Video_Pattern_Generator'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/24_bit_gen'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/OV7670_GRAYSCALE'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/Progetti/counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:axis_to_ddr_writer:1.0'. The one found in IP location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_VGA64/solution1/impl/ip' will take precedence over the same IP in location c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_AXILITE/solution1/impl/ip
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:hls:ddr_to_axis_reader:1.0'. The one found in IP location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE/solution1/impl/ip' will take precedence over the same IP in location c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/DDR/DDR_TO_AXIS_READER_VGA64/solution1/impl/ip
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:fixedio:1.0'. The one found in location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.srcs/sources_1/bd/design_1/ipshared/xilinx.com/processing_system7_v5_5/fixedio.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/fixedio.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:hpstatusctrl:1.0'. The one found in location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.srcs/sources_1/bd/design_1/ipshared/xilinx.com/processing_system7_v5_5/hpstatusctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/hpstatusctrl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:usbctrl:1.0'. The one found in location 'c:/Users/ugo/Desktop/SmartCamera-master/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.srcs/sources_1/bd/design_1/ipshared/xilinx.com/processing_system7_v5_5/usbctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/usbctrl.xml'
+report_ip_status -name ip_status
+upgrade_ip -vlnv Ugo:hls:axisTester:1.3 [get_ips  design_1_axisTester_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_axisTester_0_0 from axisTester 1.1 to axisTester 1.3
+Wrote  : <C:\Users\ugo\Desktop\baseVideo\baseVideo.srcs\sources_1\bd\design_1\design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ugo/Desktop/baseVideo/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_axisTester_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axisTester_0_outputStream_V_V } ]
+disconnect_bd_intf_net [get_bd_intf_net axisTester_0_outputStream_V_V] [get_bd_intf_pins system_ila_0/SLOT_1_AXIS]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets LF_valid_to_AXIS_0_outputStream_V_V]
+delete_bd_objs [get_bd_intf_nets axisTester_0_outputStream_V_V]
+connect_bd_intf_net [get_bd_intf_pins axisTester_0/outputStream_V_V] [get_bd_intf_pins ov7670_grayscale_0/inStream_V_V]
+connect_bd_intf_net [get_bd_intf_pins ov7670_grayscale_0/outStream_V_V] [get_bd_intf_pins pattern_generator_cr_0/inStream_V_V]
+save_bd_design
+Wrote  : <C:\Users\ugo\Desktop\baseVideo\baseVideo.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run design_1_system_ila_0_1_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [xilinx.com:ip:axi_vdma:6.3-155] /axi_vdma_0 
+                    To get the better performance, ensure AXI Memory Map clock frequency is greater than equal to AXI Streaming clock frequency.
+WARNING: [BD 41-927] Following properties on pin /ov7670_interface_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_PCLK 
+WARNING: [BD 41-927] Following properties on pin /contatore_no_io_0/ap_clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=design_1_PCLK 
+Wrote  : <C:\Users\ugo\Desktop\baseVideo\baseVideo.srcs\sources_1\bd\design_1\design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_interconnect_1/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to net 'axi_interconnect_1_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to net 'axi_interconnect_1_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to net 'axi_interconnect_1_M00_AXI_WID'(1) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_25M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tpg_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block constant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_B .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block VGA_G .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_vdma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_interface_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Const_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Const_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LF_valid_to_AXIS_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_grayscale_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block contatore_no_io_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pattern_generator_cr_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+Exporting to file c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/hw_handoff/design_1_system_ila_0_1.hwh
+Generated Block Design Tcl file c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/hw_handoff/design_1_system_ila_0_1_bd.tcl
+Generated Hardware Definition File c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_1/bd_0/synth/design_1_system_ila_0_1.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axisTester_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_1/m00_couplers/auto_pc .
+Exporting to file C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 1fdf948c4d3f1c4f; cache size = 151.118 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 1acbf50f176ac218; cache size = 151.118 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 151.118 MB.
+[Sat Mar 28 19:05:56 2020] Launched design_1_v_tpg_0_0_synth_1, design_1_system_ila_0_1_synth_1, design_1_axisTester_0_0_synth_1...
+Run output will be captured here:
+design_1_v_tpg_0_0_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+design_1_system_ila_0_1_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_system_ila_0_1_synth_1/runme.log
+design_1_axisTester_0_0_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_axisTester_0_0_synth_1/runme.log
+[Sat Mar 28 19:05:56 2020] Launched synth_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 3583.895 ; gain = 81.316
+launch_runs impl_1 -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 157.603 MB.
+[Sat Mar 28 19:11:58 2020] Launched design_1_v_tpg_0_0_synth_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+[Sat Mar 28 19:11:58 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_v_tpg_0_0, cache-ID = ed130ac5387a37ee; cache size = 157.603 MB.
+[Sat Mar 28 19:20:09 2020] Launched design_1_v_tpg_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_v_tpg_0_0_synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/design_1_v_tpg_0_0_synth_1/runme.log
+synth_1: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/synth_1/runme.log
+[Sat Mar 28 19:20:09 2020] Launched impl_1...
+Run output will be captured here: C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/runme.log
+file copy -force C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/design_1_wrapper.sysdef C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 28 19:33:53 2020...

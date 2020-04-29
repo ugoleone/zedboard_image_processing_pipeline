@@ -1,0 +1,84 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3.1 (win64) Build 2489853 Tue Mar 26 04:20:25 MDT 2019
+| Date         : Fri Apr 24 17:47:23 2020
+| Host         : DESKTOP-I3C7AFS running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    41 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            2 |
+|     10 |            1 |
+|     11 |            1 |
+|     12 |            1 |
+|     13 |            1 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              35 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              73 |           23 |
+| Yes          | No                    | No                     |              67 |           23 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              88 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|           Clock Signal           |                                Enable Signal                               |                             Set/Reset Signal                             | Slice Load Count | Bel Load Count |
++----------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+|  design_1_i/clocking_0/U0/CLK_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/E[0]                     | design_1_i/debounce_0/U0/o                                               |                4 |              8 |
+|  design_1_i/clocking_0/U0/CLK_50 | design_1_i/ov7670_controller_0/U0/Inst_ov7670_registers/busy_sr_reg[31][0] |                                                                          |                2 |              8 |
+|  design_1_i/clocking_0/U0/CLK_25 | design_1_i/vga_0/U0/vCounter_1                                             |                                                                          |                3 |             10 |
+|  design_1_i/clocking_0/U0/CLK_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr0                 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/data_sr[30]_i_1_n_0    |                2 |             11 |
+|  design_1_i/clocking_0/U0/CLK_25 |                                                                            | design_1_i/vga_0/U0/blank                                                |                8 |             12 |
+|  design_1_i/clocking_0/U0/CLK_25 |                                                                            |                                                                          |                6 |             13 |
+|  design_1_i/clocking_0/U0/CLK_50 |                                                                            | design_1_i/ov7670_controller_0/U0/Inst_ov7670_registers/sreg[15]_i_1_n_0 |                3 |             16 |
+|  OV7670_PCLK_IBUF_BUFG           | design_1_i/ov7670_capture_0/U0/p_1_in                                      | OV7670_VSYNC_IBUF                                                        |                5 |             19 |
+|  design_1_i/clocking_0/U0/CLK_25 | design_1_i/vga_0/U0/sel                                                    | design_1_i/vga_0/U0/clear                                                |                5 |             19 |
+|  OV7670_PCLK_IBUF_BUFG           |                                                                            | OV7670_VSYNC_IBUF                                                        |                6 |             21 |
+|  design_1_i/clocking_0/U0/CLK_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr0                 |                                                                          |                5 |             21 |
+|  design_1_i/clocking_0/U0/CLK_50 |                                                                            |                                                                          |               15 |             22 |
+|  design_1_i/clocking_0/U0/CLK_50 |                                                                            | design_1_i/debounce_0/U0/clear                                           |                6 |             24 |
+|  OV7670_PCLK_IBUF_BUFG           | design_1_i/ov7670_capture_0/U0/p_0_in                                      |                                                                          |               13 |             28 |
+|  design_1_i/clocking_0/U0/CLK_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr0                 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr[31]_i_1_n_0    |                8 |             31 |
++----------------------------------+----------------------------------------------------------------------------+--------------------------------------------------------------------------+------------------+----------------+
+
+

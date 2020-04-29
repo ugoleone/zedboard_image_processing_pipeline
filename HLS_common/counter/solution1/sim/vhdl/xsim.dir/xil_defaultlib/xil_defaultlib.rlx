@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/AESL_sim_pkg.vhd,1571133742,vhdl,,,,aesl_sim_components,C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims;xil_defaultlib;xpm,,,,,,
+C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/contatore_no_io.autotb.vhd,1571133741,vhdl,,,,apatb_contatore_no_io_top,C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims;xil_defaultlib;xpm,,,,,,
+C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/contatore_no_io.vhd,1571133261,vhdl,,,,contatore_no_io,C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims;xil_defaultlib;xpm,,,,,,
+C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/contatore_no_io_ubkb.vhd,1571133262,vhdl,,,,contatore_no_io_ubkb;contatore_no_io_ubkb_div;contatore_no_io_ubkb_div_u,C:/Xilinx/Vivado/2018.3/data/xsim/ip/xsim_ip.ini,axi_protocol_checker_v1_1_12;axi_protocol_checker_v1_1_13;axis_protocol_checker_v1_1_11;axis_protocol_checker_v1_1_12;ieee_proposed=./ieee_proposed;smartconnect_v1_0;unisims;xil_defaultlib;xpm,,,,,,

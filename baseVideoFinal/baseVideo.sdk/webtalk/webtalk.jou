@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# 
+# Start of session at: Wed Apr 29 18:31:48 2020
+# Process ID: 1676
+# Current directory: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

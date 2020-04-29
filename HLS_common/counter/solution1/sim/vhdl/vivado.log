@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 15 12:03:20 2019
+# Process ID: 6516
+# Current directory: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/vivado.log
+# Journal file: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+# current_fileset
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+current_fileset: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 627.379 ; gain = 70.684
+# open_wave_database contatore_no_io.wdb
+open_wave_config C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/contatore_no_io.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 15 12:07:44close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 15 12:08:00 2019...
+rent_wave_config {contatore_no_io.wcfg}
+contatore_no_io.wcfg
+add_wave {{/apatb_contatore_no_io_top/led_output_V_ap_vld}} 
+current_wave_config {contatore_no_io.wcfg}
+contatore_no_io.wcfg
+add_wave {{/apatb_contatore_no_io_top/AESL_clock}} 
+current_wave_config {contatore_no_io.wcfg}
+contatore_no_io.wcfg
+add_wave {{/apatb_contatore_no_io_top/ap_clk}} 
+current_wave_config {contatore_no_io.wcfg}
+contatore_no_io.wcfg
+add_wave {{/apatb_contatore_no_io_top/ap_ready}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 15 12:07:37 2019...

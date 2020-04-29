@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 15 12:03:20 2019
+# Process ID: 6516
+# Current directory: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/vivado.log
+# Journal file: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+open_wave_config C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/contatore_no_io.wcfg
+close_sim
+ve_config {contatore_no_io.wcfg}
+add_wave {{/apatb_contatore_no_io_top/led_output_V}} 
+current_wave_config {contatore_no_io.wcfg}
+add_wave {{/apatb_contatore_no_io_top/led_output_V_ap_vld}} 
+current_wave_config {contatore_no_io.wcfg}
+add_wave {{/apatb_contatore_no_io_top/AESL_clock}} 
+current_wave_config {contatore_no_io.wcfg}
+add_wave {{/apatb_contatore_no_io_top/ap_clk}} 
+current_wave_config {contatore_no_io.wcfg}
+add_wave {{/apatb_contatore_no_io_top/ap_ready}} 
+close_sim

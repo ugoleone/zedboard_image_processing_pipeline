@@ -1,0 +1,768 @@
+{
+  "Top": "gaussian_filter",
+  "RtlTop": "gaussian_filter",
+  "RtlPrefix": "",
+  "SourceLanguage": "cpp",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "1",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "clg484",
+    "Speed": "-1"
+  },
+  "HlsSolution": {"Config": [
+      "config_sdx -optimization_level=none",
+      "config_sdx -target=none",
+      "config_bind -effort=medium",
+      "config_schedule -effort=medium",
+      "config_schedule -relax_ii_for_timing=0",
+      "config_export -description=Gaussian_Filter",
+      "config_export -display_name=Gaussian_Filter",
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog",
+      "config_export -vendor=Ugo",
+      "config_export -version=1.0"
+    ]},
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "13",
+    "IsCombLogic": "0",
+    "II": "x",
+    "Latency": "321431",
+    "Uncertainty": "1.625"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 13.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "Ugo",
+    "Library": "hls",
+    "Name": "gaussian_filter",
+    "Version": "1.0",
+    "DisplayName": "Gaussian_Filter",
+    "Revision": "",
+    "Description": "Gaussian_Filter",
+    "Taxonomy": "\/VIVADO_HLS_IP",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": ["..\/gaussian_filter.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/AXIvideo2Mat.vhd",
+      "impl\/vhdl\/Block_proc.vhd",
+      "impl\/vhdl\/CvtColor.vhd",
+      "impl\/vhdl\/CvtColor_1.vhd",
+      "impl\/vhdl\/fifo_w8_d2_A.vhd",
+      "impl\/vhdl\/fifo_w10_d2_A.vhd",
+      "impl\/vhdl\/fifo_w11_d2_A.vhd",
+      "impl\/vhdl\/Filter2D.vhd",
+      "impl\/vhdl\/Filter2D_k_buf_0_eOg.vhd",
+      "impl\/vhdl\/gaussian_filter_a7jG.vhd",
+      "impl\/vhdl\/gaussian_filter_a8jQ.vhd",
+      "impl\/vhdl\/gaussian_filter_abbk.vhd",
+      "impl\/vhdl\/gaussian_filter_abck.vhd",
+      "impl\/vhdl\/gaussian_filter_aYie.vhd",
+      "impl\/vhdl\/gaussian_filter_m0iy.vhd",
+      "impl\/vhdl\/gaussian_filter_m1iI.vhd",
+      "impl\/vhdl\/gaussian_filter_m2iS.vhd",
+      "impl\/vhdl\/gaussian_filter_m3i2.vhd",
+      "impl\/vhdl\/gaussian_filter_m4jc.vhd",
+      "impl\/vhdl\/gaussian_filter_m5jm.vhd",
+      "impl\/vhdl\/gaussian_filter_m6jw.vhd",
+      "impl\/vhdl\/gaussian_filter_m9j0.vhd",
+      "impl\/vhdl\/gaussian_filter_mbak.vhd",
+      "impl\/vhdl\/gaussian_filter_mbkb.vhd",
+      "impl\/vhdl\/gaussian_filter_mcud.vhd",
+      "impl\/vhdl\/gaussian_filter_mdEe.vhd",
+      "impl\/vhdl\/gaussian_filter_mRg6.vhd",
+      "impl\/vhdl\/gaussian_filter_mShg.vhd",
+      "impl\/vhdl\/gaussian_filter_mThq.vhd",
+      "impl\/vhdl\/gaussian_filter_mUhA.vhd",
+      "impl\/vhdl\/gaussian_filter_mVhK.vhd",
+      "impl\/vhdl\/gaussian_filter_mWhU.vhd",
+      "impl\/vhdl\/gaussian_filter_mXh4.vhd",
+      "impl\/vhdl\/gaussian_filter_mZio.vhd",
+      "impl\/vhdl\/GaussianBlur.vhd",
+      "impl\/vhdl\/Mat2AXIvideo.vhd",
+      "impl\/vhdl\/start_for_CvtColobdk.vhd",
+      "impl\/vhdl\/start_for_CvtColobfk.vhd",
+      "impl\/vhdl\/start_for_Gaussiabek.vhd",
+      "impl\/vhdl\/start_for_Mat2AXIbgk.vhd",
+      "impl\/vhdl\/gaussian_filter.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/AXIvideo2Mat.v",
+      "impl\/verilog\/Block_proc.v",
+      "impl\/verilog\/CvtColor.v",
+      "impl\/verilog\/CvtColor_1.v",
+      "impl\/verilog\/fifo_w8_d2_A.v",
+      "impl\/verilog\/fifo_w10_d2_A.v",
+      "impl\/verilog\/fifo_w11_d2_A.v",
+      "impl\/verilog\/Filter2D.v",
+      "impl\/verilog\/Filter2D_k_buf_0_eOg.v",
+      "impl\/verilog\/gaussian_filter_a7jG.v",
+      "impl\/verilog\/gaussian_filter_a8jQ.v",
+      "impl\/verilog\/gaussian_filter_abbk.v",
+      "impl\/verilog\/gaussian_filter_abck.v",
+      "impl\/verilog\/gaussian_filter_aYie.v",
+      "impl\/verilog\/gaussian_filter_m0iy.v",
+      "impl\/verilog\/gaussian_filter_m1iI.v",
+      "impl\/verilog\/gaussian_filter_m2iS.v",
+      "impl\/verilog\/gaussian_filter_m3i2.v",
+      "impl\/verilog\/gaussian_filter_m4jc.v",
+      "impl\/verilog\/gaussian_filter_m5jm.v",
+      "impl\/verilog\/gaussian_filter_m6jw.v",
+      "impl\/verilog\/gaussian_filter_m9j0.v",
+      "impl\/verilog\/gaussian_filter_mbak.v",
+      "impl\/verilog\/gaussian_filter_mbkb.v",
+      "impl\/verilog\/gaussian_filter_mcud.v",
+      "impl\/verilog\/gaussian_filter_mdEe.v",
+      "impl\/verilog\/gaussian_filter_mRg6.v",
+      "impl\/verilog\/gaussian_filter_mShg.v",
+      "impl\/verilog\/gaussian_filter_mThq.v",
+      "impl\/verilog\/gaussian_filter_mUhA.v",
+      "impl\/verilog\/gaussian_filter_mVhK.v",
+      "impl\/verilog\/gaussian_filter_mWhU.v",
+      "impl\/verilog\/gaussian_filter_mXh4.v",
+      "impl\/verilog\/gaussian_filter_mZio.v",
+      "impl\/verilog\/GaussianBlur.v",
+      "impl\/verilog\/Mat2AXIvideo.v",
+      "impl\/verilog\/start_for_CvtColobdk.v",
+      "impl\/verilog\/start_for_CvtColobfk.v",
+      "impl\/verilog\/start_for_Gaussiabek.v",
+      "impl\/verilog\/start_for_Mat2AXIbgk.v",
+      "impl\/verilog\/gaussian_filter.v"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "DesignXml": "C:\/Users\/ugo\/Desktop\/Progetti\/gaussian\/solution1\/.autopilot\/db\/gaussian_filter.design.xml"
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": []
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "buses": "stream_in stream_out",
+      "reset": "ap_rst_n"
+    },
+    "ap_ctrl": {
+      "type": "ap_ctrl",
+      "ctrl_ports": "ap_start ap_done ap_ready ap_idle",
+      "ctype": {
+        "start": {"Type": "bool"},
+        "done": {"Type": "bool"},
+        "ready": {"Type": "bool"},
+        "idle": {"Type": "bool"}
+      }
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "polarity": "ACTIVE_LOW",
+      "ctype": {"RST": {"Type": "bool"}}
+    },
+    "stream_in": {
+      "type": "axi4stream",
+      "mode": "slave",
+      "port_prefix": "stream_in",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "integer unsigned",
+          "Width": "24"
+        },
+        "TKEEP": {
+          "Type": "integer unsigned",
+          "Width": "3"
+        },
+        "TSTRB": {
+          "Type": "integer unsigned",
+          "Width": "3"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TID": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
+      },
+      "port_width": {
+        "TDATA": "24",
+        "TDEST": "1",
+        "TID": "1",
+        "TKEEP": "3",
+        "TLAST": "1",
+        "TSTRB": "3",
+        "TUSER": "1"
+      }
+    },
+    "stream_out": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "stream_out",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "integer unsigned",
+          "Width": "24"
+        },
+        "TKEEP": {
+          "Type": "integer unsigned",
+          "Width": "3"
+        },
+        "TSTRB": {
+          "Type": "integer unsigned",
+          "Width": "3"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TID": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TDEST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TVALID": {"Type": "bool"},
+        "TREADY": {"Type": "bool"}
+      },
+      "port_width": {
+        "TDATA": "24",
+        "TDEST": "1",
+        "TID": "1",
+        "TKEEP": "3",
+        "TLAST": "1",
+        "TSTRB": "3",
+        "TUSER": "1"
+      }
+    }
+  },
+  "RtlPorts": {
+    "stream_in_TDATA": {
+      "dir": "in",
+      "width": "24"
+    },
+    "stream_in_TKEEP": {
+      "dir": "in",
+      "width": "3"
+    },
+    "stream_in_TSTRB": {
+      "dir": "in",
+      "width": "3"
+    },
+    "stream_in_TUSER": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "stream_in_TLAST": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "stream_in_TID": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "stream_in_TDEST": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "stream_in_TVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "stream_in_TREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "stream_out_TDATA": {
+      "dir": "out",
+      "width": "24"
+    },
+    "stream_out_TKEEP": {
+      "dir": "out",
+      "width": "3"
+    },
+    "stream_out_TSTRB": {
+      "dir": "out",
+      "width": "3"
+    },
+    "stream_out_TUSER": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "stream_out_TLAST": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "stream_out_TID": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "stream_out_TDEST": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "stream_out_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "stream_out_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_start": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_done": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_ready": {
+      "dir": "out",
+      "width": "1"
+    },
+    "ap_idle": {
+      "dir": "out",
+      "width": "1"
+    }
+  },
+  "CPorts": {
+    "stream_in_V_data_V": {
+      "interfaceRef": "stream_in",
+      "dir": "in"
+    },
+    "stream_in_V_keep_V": {
+      "interfaceRef": "stream_in",
+      "dir": "in"
+    },
+    "stream_in_V_strb_V": {
+      "interfaceRef": "stream_in",
+      "dir": "in"
+    },
+    "stream_in_V_user_V": {
+      "interfaceRef": "stream_in",
+      "dir": "in"
+    },
+    "stream_in_V_last_V": {
+      "interfaceRef": "stream_in",
+      "dir": "in"
+    },
+    "stream_in_V_id_V": {
+      "interfaceRef": "stream_in",
+      "dir": "in"
+    },
+    "stream_in_V_dest_V": {
+      "interfaceRef": "stream_in",
+      "dir": "in"
+    },
+    "stream_out_V_data_V": {
+      "interfaceRef": "stream_out",
+      "dir": "out",
+      "firstOutLatency": "3"
+    },
+    "stream_out_V_keep_V": {
+      "interfaceRef": "stream_out",
+      "dir": "out",
+      "firstOutLatency": "3"
+    },
+    "stream_out_V_strb_V": {
+      "interfaceRef": "stream_out",
+      "dir": "out",
+      "firstOutLatency": "3"
+    },
+    "stream_out_V_user_V": {
+      "interfaceRef": "stream_out",
+      "dir": "out",
+      "firstOutLatency": "3"
+    },
+    "stream_out_V_last_V": {
+      "interfaceRef": "stream_out",
+      "dir": "out",
+      "firstOutLatency": "3"
+    },
+    "stream_out_V_id_V": {
+      "interfaceRef": "stream_out",
+      "dir": "out",
+      "firstOutLatency": "3"
+    },
+    "stream_out_V_dest_V": {
+      "interfaceRef": "stream_out",
+      "dir": "out",
+      "firstOutLatency": "3"
+    },
+    "ap_ctrl": {
+      "interfaceRef": "ap_ctrl",
+      "dir": "out"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "gaussian_filter",
+      "Instances": [
+        {
+          "ModuleName": "GaussianBlur",
+          "InstanceName": "GaussianBlur_U0",
+          "Instances": [{
+              "ModuleName": "Filter2D",
+              "InstanceName": "grp_Filter2D_fu_26"
+            }]
+        },
+        {
+          "ModuleName": "AXIvideo2Mat",
+          "InstanceName": "AXIvideo2Mat_U0"
+        },
+        {
+          "ModuleName": "CvtColor",
+          "InstanceName": "CvtColor_U0"
+        },
+        {
+          "ModuleName": "Mat2AXIvideo",
+          "InstanceName": "Mat2AXIvideo_U0"
+        },
+        {
+          "ModuleName": "CvtColor_1",
+          "InstanceName": "CvtColor_1_U0"
+        },
+        {
+          "ModuleName": "Block_proc",
+          "InstanceName": "Block_proc_U0"
+        }
+      ]
+    },
+    "Metrics": {
+      "Block_proc": {
+        "Latency": {
+          "LatencyBest": "0",
+          "LatencyAvg": "0",
+          "LatencyWorst": "0",
+          "PipelineII": "0",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "13.00",
+          "Uncertainty": "1.63",
+          "Estimate": "3.634"
+        },
+        "Area": {
+          "FF": "2",
+          "LUT": "29",
+          "BRAM_18K": "0",
+          "DSP48E": "0"
+        }
+      },
+      "AXIvideo2Mat": {
+        "Latency": {
+          "LatencyBest": "3",
+          "LatencyAvg": "",
+          "LatencyWorst": "309603",
+          "PipelineIIMin": "3",
+          "PipelineIIMax": "309603",
+          "PipelineII": "3 ~ 309603",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "13.00",
+          "Uncertainty": "1.63",
+          "Estimate": "7.268"
+        },
+        "Loops": [
+          {
+            "Name": "loop_wait_for_start",
+            "TripCount": "0",
+            "Latency": "0",
+            "PipelineII": "1",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "loop_height",
+            "TripCount": "",
+            "LatencyMin": "0",
+            "LatencyMax": "309600",
+            "Latency": "0 ~ 309600",
+            "PipelineII": "",
+            "PipelineDepthMin": "5",
+            "PipelineDepthMax": "645",
+            "PipelineDepth": "5 ~ 645",
+            "Loops": [
+              {
+                "Name": "loop_width",
+                "TripCount": "",
+                "LatencyMin": "0",
+                "LatencyMax": "640",
+                "Latency": "0 ~ 640",
+                "PipelineII": "1",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "loop_wait_for_eol",
+                "TripCount": "0",
+                "Latency": "0",
+                "PipelineII": "1",
+                "PipelineDepth": "1"
+              }
+            ]
+          }
+        ],
+        "Area": {
+          "FF": "391",
+          "LUT": "570",
+          "BRAM_18K": "0",
+          "DSP48E": "0"
+        }
+      },
+      "CvtColor": {
+        "Latency": {
+          "LatencyBest": "1",
+          "LatencyAvg": "",
+          "LatencyWorst": "309601",
+          "PipelineIIMin": "1",
+          "PipelineIIMax": "309601",
+          "PipelineII": "1 ~ 309601",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "13.00",
+          "Uncertainty": "1.63",
+          "Estimate": "12.563"
+        },
+        "Loops": [{
+            "Name": "loop_height",
+            "TripCount": "",
+            "LatencyMin": "0",
+            "LatencyMax": "309600",
+            "Latency": "0 ~ 309600",
+            "PipelineII": "",
+            "PipelineDepthMin": "3",
+            "PipelineDepthMax": "645",
+            "PipelineDepth": "3 ~ 645",
+            "Loops": [{
+                "Name": "loop_width",
+                "TripCount": "",
+                "LatencyMin": "0",
+                "LatencyMax": "642",
+                "Latency": "0 ~ 642",
+                "PipelineII": "1",
+                "PipelineDepth": "4"
+              }]
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "3",
+          "FF": "177",
+          "LUT": "279"
+        }
+      },
+      "Filter2D": {
+        "Latency": {
+          "LatencyBest": "321424",
+          "LatencyAvg": "321424",
+          "LatencyWorst": "321424",
+          "PipelineII": "321424",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "13.00",
+          "Uncertainty": "1.63",
+          "Estimate": "13.584"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "3",
+            "Latency": "2",
+            "PipelineII": "",
+            "PipelineDepth": "1"
+          },
+          {
+            "Name": "loop_height",
+            "TripCount": "487",
+            "Latency": "321420",
+            "PipelineII": "",
+            "PipelineDepth": "660",
+            "Loops": [{
+                "Name": "loop_width",
+                "TripCount": "652",
+                "Latency": "657",
+                "PipelineII": "1",
+                "PipelineDepth": "7"
+              }]
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "39",
+          "DSP48E": "213",
+          "FF": "10810",
+          "LUT": "22190"
+        }
+      },
+      "GaussianBlur": {
+        "Latency": {
+          "LatencyBest": "321425",
+          "LatencyAvg": "321425",
+          "LatencyWorst": "321425",
+          "PipelineII": "321425",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "13.00",
+          "Uncertainty": "1.63",
+          "Estimate": "13.584"
+        },
+        "Area": {
+          "BRAM_18K": "39",
+          "DSP48E": "213",
+          "FF": "10815",
+          "LUT": "22279"
+        }
+      },
+      "CvtColor_1": {
+        "Latency": {
+          "LatencyBest": "308641",
+          "LatencyAvg": "308641",
+          "LatencyWorst": "308641",
+          "PipelineII": "308641",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "13.00",
+          "Uncertainty": "1.63",
+          "Estimate": "7.268"
+        },
+        "Loops": [{
+            "Name": "loop_height",
+            "TripCount": "480",
+            "Latency": "308640",
+            "PipelineII": "",
+            "PipelineDepth": "643",
+            "Loops": [{
+                "Name": "loop_width",
+                "TripCount": "640",
+                "Latency": "640",
+                "PipelineII": "1",
+                "PipelineDepth": "2"
+              }]
+          }],
+        "Area": {
+          "FF": "37",
+          "LUT": "197",
+          "BRAM_18K": "0",
+          "DSP48E": "0"
+        }
+      },
+      "Mat2AXIvideo": {
+        "Latency": {
+          "LatencyBest": "309121",
+          "LatencyAvg": "309121",
+          "LatencyWorst": "309121",
+          "PipelineII": "309121",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "13.00",
+          "Uncertainty": "1.63",
+          "Estimate": "3.634"
+        },
+        "Loops": [{
+            "Name": "loop_height",
+            "TripCount": "480",
+            "Latency": "309120",
+            "PipelineII": "",
+            "PipelineDepth": "644",
+            "Loops": [{
+                "Name": "loop_width",
+                "TripCount": "640",
+                "Latency": "641",
+                "PipelineII": "1",
+                "PipelineDepth": "3"
+              }]
+          }],
+        "Area": {
+          "FF": "116",
+          "LUT": "362",
+          "BRAM_18K": "0",
+          "DSP48E": "0"
+        }
+      },
+      "gaussian_filter": {
+        "Latency": {
+          "LatencyBest": "321431",
+          "LatencyAvg": "",
+          "LatencyWorst": "321431",
+          "PipelineII": "321426",
+          "PipelineDepth": "",
+          "PipelineType": "dataflow"
+        },
+        "Timing": {
+          "Target": "13.00",
+          "Uncertainty": "1.63",
+          "Estimate": "13.584"
+        },
+        "Area": {
+          "BRAM_18K": "39",
+          "DSP48E": "216",
+          "FF": "11624",
+          "LUT": "24114"
+        }
+      }
+    }
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "gaussian_filter",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.1",
+    "Time": "2020-04-24 21:53:57 +0200",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2018.3.1"
+  }
+}

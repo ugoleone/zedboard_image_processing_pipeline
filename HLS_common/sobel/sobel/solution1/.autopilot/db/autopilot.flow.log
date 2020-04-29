@@ -1,0 +1,1598 @@
+INFO-FLOW: Workspace C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1 opened at Sat Feb 29 19:02:54 +0100 2020
+Execute     config_clock -quiet -name default -period 13.5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.5ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Command     import_lib done; 0.141 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.124 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.245 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.258 sec.
+Command     ap_source done; 0.264 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.614 sec.
+Execute   set_part xc7z020clg484-1 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 13.5 -name default 
+Execute     config_clock -quiet -name default -period 13.5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.5ns.
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     config_compile -blackbox  
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'sobel_edge_detect.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling sobel_edge_detect.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted sobel_edge_detect.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls  -fno-exceptions  -D__llvm__  -E "sobel_edge_detect.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-exceptions -D__llvm__ -E sobel_edge_detect.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp
+Command       clang done; 2.089 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.019 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.3/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp"  -o "C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/useless.bc
+Command       clang done; 4.973 sec.
+INFO-FLOW: Done: GCC PP time: 9.1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp std=gnu++98 -directive=C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.613 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp std=gnu++98 -directive=C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 1.561 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/xilinx-dataflow-lawyer.sobel_edge_detect.pp.0.cpp.diag.yml C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/xilinx-dataflow-lawyer.sobel_edge_detect.pp.0.cpp.out.log 2> C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/xilinx-dataflow-lawyer.sobel_edge_detect.pp.0.cpp.err.log 
+Command       ap_eval done; 1.677 sec.
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/tidy-3.1.sobel_edge_detect.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/tidy-3.1.sobel_edge_detect.pp.0.cpp.out.log 2> C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/tidy-3.1.sobel_edge_detect.pp.0.cpp.err.log 
+Command         ap_eval done; 2.214 sec.
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/xilinx-legacy-rewriter.sobel_edge_detect.pp.0.cpp.out.log 2> C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/xilinx-legacy-rewriter.sobel_edge_detect.pp.0.cpp.err.log 
+Command         ap_eval done; 1.743 sec.
+Command       tidy_31 done; 3.974 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 7.2 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 2.41 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.3/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.3/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot -I C:/Xilinx/Vivado/2018.3/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.bc
+Command       clang done; 5.504 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.g.bc -hls-opt -except-internalize sobel_edge_detect -LC:/Xilinx/Vivado/2018.3/win64/lib -lhlsm -lhlsmc++ -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 3.597 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:32 . Memory (MB): peak = 103.250 ; gain = 36.094
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:33 . Memory (MB): peak = 103.250 ; gain = 36.094
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.pp.bc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.pp.0.bc -f 
+Command         transform done; 0.355 sec.
+Execute         llvm-ld C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.3/win64/lib -lfloatconversion -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 1.02 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -lower-blackbox -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top sobel_edge_detect -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g.0.bc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::init' into 'hls::Mat<480, 640, 4096>::Mat.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:642).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, unsigned char>.1' into 'hls::AXIGetBitFields<24, unsigned char>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:71).
+INFO: [XFORM 203-603] Inlining function 'hls::AXIGetBitFields<24, unsigned char>' into 'hls::AXIvideo2Mat<24, 480, 640, 4096>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:92).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::write' into 'hls::Mat<480, 640, 4096>::operator<<' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:717).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::operator<<' into 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1973).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::operator<<' into 'hls::CvtColor<HLS_RGB2GRAY, 4096, 4096, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1973).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::operator<<' into 'hls::AXIvideo2Mat<24, 480, 640, 4096>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:94).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::read' into 'hls::Mat<480, 640, 4096>::operator>>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:711).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::operator>>' into 'hls::Mat2AXIvideo<24, 480, 640, 4096>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:140).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::operator>>' into 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1971).
+INFO: [XFORM 203-603] Inlining function 'hls::Mat<480, 640, 4096>::operator>>' into 'hls::CvtColor<HLS_RGB2GRAY, 4096, 4096, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1971).
+INFO: [XFORM 203-603] Inlining function 'hls::ColorConverter<unsigned char, unsigned char>::convert<3>' into 'hls::kernel_CvtColor<HLS_RGB2GRAY, unsigned char, unsigned char>::apply<3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<1, 3, ap_int<8> >::getval' into 'hls::Window<1, 3, ap_int<8> >::operator()' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:501).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<1, 3, ap_int<8> >::operator()' into 'hls::Sobel_kernel<1, 0, 3, ap_int<8> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:2591).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<1, 3, ap_int<8> >::operator()' into 'hls::Sobel_kernel<1, 0, 3, ap_int<8> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:2599).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, ap_int<8> >::getval' into 'hls::Window<3, 1, ap_int<8> >::operator()' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:501).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, ap_int<8> >::operator()' into 'hls::Sobel_kernel<1, 0, 3, ap_int<8> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:2593).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, ap_int<8> >::operator()' into 'hls::Sobel_kernel<1, 0, 3, ap_int<8> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:2599).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_int<8> >::getval' into 'hls::Window<3, 3, ap_int<8> >::operator()' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:501).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, ap_int<8> >::operator()' into 'hls::Sobel_kernel<1, 0, 3, ap_int<8> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:2599).
+INFO: [XFORM 203-603] Inlining function 'hls::normalizeAnchor<int, int>' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:424).
+INFO: [XFORM 203-603] Inlining function 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::get_parameters<3, 3, int>' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:434).
+INFO: [XFORM 203-603] Inlining function 'hls::borderInterpolate' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:452).
+INFO: [XFORM 203-603] Inlining function 'hls::borderInterpolate' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:470).
+INFO: [XFORM 203-603] Inlining function 'hls::borderInterpolate' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:506).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::getval' into 'hls::Window<3, 3, unsigned char>::operator()' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:501).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:507).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:503).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:484).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:481).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:481).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:458).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, unsigned char>::getval' into 'hls::Window<3, 1, unsigned char>::operator()' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:501).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:458).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:460).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:484).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:503).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 1, unsigned char>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:507).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<6, 640, unsigned char, 0>::getval' into 'hls::LineBuffer<6, 640, unsigned char, 0>::operator()' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:843).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<6, 640, unsigned char, 0>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:493).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<6, 640, unsigned char, 0>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:489).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<6, 640, unsigned char, 0>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:489).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<6, 640, unsigned char, 0>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:472).
+INFO: [XFORM 203-603] Inlining function 'hls::LineBuffer<6, 640, unsigned char, 0>::operator()' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:460).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::shift_pixels_right' into 'hls::Window<3, 3, unsigned char>::shift_right' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:543).
+INFO: [XFORM 203-603] Inlining function 'hls::Window<3, 3, unsigned char>::shift_right' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:499).
+INFO: [XFORM 203-603] Inlining function 'hls::filter2d_kernel::apply<unsigned char, ap_fixed<20, 20, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_int<8>, 3, 3>' into 'hls::filter2d_kernel::apply<unsigned char, unsigned char, ap_int<8>, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:303).
+INFO: [XFORM 203-603] Inlining function 'hls::filter2d_kernel::apply<unsigned char, unsigned char, ap_int<8>, 3, 3>' into 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:514).
+INFO: [XFORM 203-603] Inlining function 'hls::filter_opr<hls::filter2d_kernel, hls::BORDER_DEFAULT>::filter<4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' into 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1289).
+INFO: [XFORM 203-603] Inlining function 'hls::kernel_CvtColor<HLS_GRAY2RGB, unsigned char, unsigned char>::apply<3, 3>' into 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<24, unsigned char>.1' into 'hls::AXISetBitFields<24, unsigned char>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:100).
+INFO: [XFORM 203-603] Inlining function 'hls::AXISetBitFields<24, unsigned char>' into 'hls::Mat2AXIvideo<24, 480, 640, 4096>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:143).
+Command         transform done; 1.513 sec.
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:35 . Memory (MB): peak = 169.805 ; gain = 102.648
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g.1.bc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<35, 13, (ap_q_mode)5, (ap_o_mode)3>' into 'hls::sr_cast<unsigned char, ap_fixed<35, 13, (ap_q_mode)5, (ap_o_mode)3, 0> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, ap_fixed<35, 13, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'hls::kernel_CvtColor<HLS_RGB2GRAY, unsigned char, unsigned char>::apply<3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1498->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<20, 20, (ap_q_mode)5, (ap_o_mode)3>' into 'hls::sr_cast<unsigned char, ap_fixed<20, 20, (ap_q_mode)5, (ap_o_mode)3, 0> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, ap_fixed<20, 20, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:304->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:514->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1289) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::Sobel<1, 0, 3, hls::BORDER_DEFAULT, 4096, 4096, 480, 640, 480, 640>' into 'hls::Sobel<1, 0, 3, 4096, 4096, 480, 640, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:2627) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<8>' into 'hls::sr_cast_class<ap_uint<8> >::operator()' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:432) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()' into 'hls::sr_cast<unsigned char, unsigned char>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, unsigned char>' into 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1554->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) automatically.
+Command         transform done; 0.873 sec.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_axi_io.h:78: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+Command         transform done; 0.284 sec.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 210.707 ; gain = 143.551
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.g.1.bc to C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.o.1.bc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img1.data_stream.V' (sobel_edge_detect.cpp:11).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img3.data_stream.V' (sobel_edge_detect.cpp:13).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img0.data_stream.V' (sobel_edge_detect.cpp:10).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:126) in function 'hls::Mat2AXIvideo<24, 480, 640, 4096>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:444) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1968) in function 'hls::CvtColor<HLS_RGB2GRAY, 4096, 4096, 480, 640>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1968) in function 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'loop_width' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:73) in function 'hls::AXIvideo2Mat<24, 480, 640, 4096>' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::Mat2AXIvideo<24, 480, 640, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:142) in function 'hls::Mat2AXIvideo<24, 480, 640, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'channelloop' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:450) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:456) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.2' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:469) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 6.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.3' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:478) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.3.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:479) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.4' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:487) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.5' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:161) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.5.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:163) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 2.
+INFO: [HLS 200-489] Unrolling loop 'Loop-5.1.1.6' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:501) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_height' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:285) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_width' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:286) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::CvtColor<HLS_RGB2GRAY, 4096, 4096, 480, 640>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::CvtColor<HLS_RGB2GRAY, 4096, 4096, 480, 640>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:677) in function 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1.2' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'loop_channels' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:91) in function 'hls::AXIvideo2Mat<24, 480, 640, 4096>' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.1.2' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:701) in function 'hls::AXIvideo2Mat<24, 480, 640, 4096>' completely with a factor of 3.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Partitioning array 's.val.assign' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:589) automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img0.data_stream.V' (sobel_edge_detect.cpp:10) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img1.data_stream.V' (sobel_edge_detect.cpp:11) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img2.data_stream.V' (sobel_edge_detect.cpp:12) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'img3.data_stream.V' (sobel_edge_detect.cpp:13) .
+INFO: [XFORM 203-101] Partitioning array 'kernel.val.V'  in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:115) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_kernel_win.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:398) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'k_buf.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'right_border_buf.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:403) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'col_buf.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:405) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel_opr.par.val.V' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1960) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_s.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1965) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_d.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1966) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_s.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1965) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_d.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1966) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'scl.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_core.h:670) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pix.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:56) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img0.data_stream.V' (sobel_edge_detect.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img1.data_stream.V' (sobel_edge_detect.cpp:11) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img2.data_stream.V' (sobel_edge_detect.cpp:12) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'img3.data_stream.V' (sobel_edge_detect.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'kernel.val.V'  in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_kernel_win.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:398) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'k_buf.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'right_border_buf.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:403) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'col_buf.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:405) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src_kernel_win.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:398) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'right_border_buf.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:403) in dimension 3 completely.
+INFO: [XFORM 203-101] Partitioning array 'col_buf.val' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:405) in dimension 3 completely.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<35, 13, (ap_q_mode)5, (ap_o_mode)3>' into 'hls::sr_cast<unsigned char, ap_fixed<35, 13, (ap_q_mode)5, (ap_o_mode)3, 0> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, ap_fixed<35, 13, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'hls::kernel_CvtColor<HLS_RGB2GRAY, unsigned char, unsigned char>::apply<3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1498->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::kernel_CvtColor<HLS_RGB2GRAY, unsigned char, unsigned char>::apply<3, 3>' into 'hls::CvtColor<HLS_RGB2GRAY, 4096, 4096, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<20, 20, (ap_q_mode)5, (ap_o_mode)3>' into 'hls::sr_cast<unsigned char, ap_fixed<20, 20, (ap_q_mode)5, (ap_o_mode)3, 0> >' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, ap_fixed<20, 20, (ap_q_mode)5, (ap_o_mode)3, 0> >' into 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:304->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:514->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1289) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::Sobel<1, 0, 3, hls::BORDER_DEFAULT, 4096, 4096, 480, 640, 480, 640>' into 'hls::Sobel<1, 0, 3, 4096, 4096, 480, 640, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:2627) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()<8>' into 'hls::sr_cast_class<ap_uint<8> >::operator()' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:432) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast_class<ap_uint<8> >::operator()' into 'hls::sr_cast<unsigned char, unsigned char>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::sr_cast<unsigned char, unsigned char>' into 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1554->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) automatically.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 640 for loop 'loop_width' in function 'hls::Mat2AXIvideo<24, 480, 640, 4096>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 480 for loop 'loop_height' in function 'hls::Mat2AXIvideo<24, 480, 640, 4096>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 640 for loop 'loop_width' in function 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 480 for loop 'loop_height' in function 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>'.
+INFO: [XFORM 203-712] Applying dataflow to function 'sobel_edge_detect', detected/extracted 6 process function(s): 
+	 'Block__proc'
+	 'hls::AXIvideo2Mat<24, 480, 640, 4096>'
+	 'hls::CvtColor<HLS_RGB2GRAY, 4096, 4096, 480, 640>'
+	 'hls::Sobel<1, 0, 3, 4096, 4096, 480, 640, 480, 640>'
+	 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>'
+	 'hls::Mat2AXIvideo<24, 480, 640, 4096>'.
+Command         transform done; 3.566 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+WARNING: [XFORM 203-561] Updating loop lower bound from 10 to 642 for loop 'loop_width' in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 483 to 482 for loop 'loop_height' in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'.
+WARNING: [XFORM 203-561] Updating loop lower bound from 9 to 482 for loop 'loop_height' in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:444:57) to (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:465:21) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:165:17) to (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:512:24) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'... converting 13 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgbase.h:113:42) to (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:465:21) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:165:17) to (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:512:24) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'... converting 13 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgbase.h:113:42) to (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:465:21) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'... converting 12 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_mem.h:165:17) to (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:512:24) in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>'... converting 13 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1279)...33 expression(s) balanced.
+Command         transform done; 1.505 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:42 . Memory (MB): peak = 279.406 ; gain = 212.250
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -cdfg-build C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.o.2.bc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+WARNING: [XFORM 203-631] Renaming function 'hls::Sobel<1, 0, 3, 4096, 4096, 480, 640, 480, 640>' to 'Sobel' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:2619:1)
+WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo<24, 480, 640, 4096>' to 'Mat2AXIvideo' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:78:50)
+WARNING: [XFORM 203-631] Renaming function 'hls::Filter2D<hls::BORDER_DEFAULT, 4096, 4096, ap_int<8>, int, 480, 640, 3, 3>' to 'Filter2D' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:118:33)
+WARNING: [XFORM 203-631] Renaming function 'hls::CvtColor<HLS_RGB2GRAY, 4096, 4096, 480, 640>' to 'CvtColor' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:409:39)
+WARNING: [XFORM 203-631] Renaming function 'hls::CvtColor<HLS_GRAY2RGB, 4096, 4096, 480, 640>' to 'CvtColor.1' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:672:42)
+WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat<24, 480, 640, 4096>' to 'AXIvideo2Mat' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_io.h:49:9)
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[1].val[5]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[5]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[2].val[5]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[3]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[4]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[1].val[3]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[1].val[4]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[2].val[3]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[2].val[4]' (C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:400).
+Command         transform done; 2.757 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:44 . Memory (MB): peak = 357.328 ; gain = 290.172
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 11.987 sec.
+Command     elaborate done; 42.155 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'sobel_edge_detect' ...
+Execute       ap_set_top_model sobel_edge_detect 
+WARNING: [SYN 201-103] Legalizing function name 'Block__proc' to 'Block_proc'.
+WARNING: [SYN 201-103] Legalizing function name 'CvtColor.1' to 'CvtColor_1'.
+Execute       get_model_list sobel_edge_detect -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model sobel_edge_detect 
+Execute       preproc_iomode -model Mat2AXIvideo 
+Execute       preproc_iomode -model CvtColor.1 
+Execute       preproc_iomode -model Sobel 
+Execute       preproc_iomode -model Filter2D 
+Execute       preproc_iomode -model CvtColor 
+Execute       preproc_iomode -model AXIvideo2Mat 
+Execute       preproc_iomode -model Block__proc 
+Execute       get_model_list sobel_edge_detect -filter all-wo-channel 
+INFO-FLOW: Model list for configure: Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect
+INFO-FLOW: Configuring Module : Block__proc ...
+Execute       set_default_model Block__proc 
+Execute       apply_spec_resource_limit Block__proc 
+INFO-FLOW: Configuring Module : AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       apply_spec_resource_limit AXIvideo2Mat 
+INFO-FLOW: Configuring Module : CvtColor ...
+Execute       set_default_model CvtColor 
+Execute       apply_spec_resource_limit CvtColor 
+INFO-FLOW: Configuring Module : Filter2D ...
+Execute       set_default_model Filter2D 
+Execute       apply_spec_resource_limit Filter2D 
+INFO-FLOW: Configuring Module : Sobel ...
+Execute       set_default_model Sobel 
+Execute       apply_spec_resource_limit Sobel 
+INFO-FLOW: Configuring Module : CvtColor.1 ...
+Execute       set_default_model CvtColor.1 
+Execute       apply_spec_resource_limit CvtColor.1 
+INFO-FLOW: Configuring Module : Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       apply_spec_resource_limit Mat2AXIvideo 
+INFO-FLOW: Configuring Module : sobel_edge_detect ...
+Execute       set_default_model sobel_edge_detect 
+Execute       apply_spec_resource_limit sobel_edge_detect 
+INFO-FLOW: Model list for preprocess: Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect
+INFO-FLOW: Preprocessing Module: Block__proc ...
+Execute       set_default_model Block__proc 
+Execute       cdfg_preprocess -model Block__proc 
+Execute       rtl_gen_preprocess Block__proc 
+INFO-FLOW: Preprocessing Module: AXIvideo2Mat ...
+Execute       set_default_model AXIvideo2Mat 
+Execute       cdfg_preprocess -model AXIvideo2Mat 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+INFO-FLOW: Preprocessing Module: CvtColor ...
+Execute       set_default_model CvtColor 
+Execute       cdfg_preprocess -model CvtColor 
+Execute       rtl_gen_preprocess CvtColor 
+INFO-FLOW: Preprocessing Module: Filter2D ...
+Execute       set_default_model Filter2D 
+Execute       cdfg_preprocess -model Filter2D 
+Execute       rtl_gen_preprocess Filter2D 
+INFO-FLOW: Preprocessing Module: Sobel ...
+Execute       set_default_model Sobel 
+Execute       cdfg_preprocess -model Sobel 
+Execute       rtl_gen_preprocess Sobel 
+INFO-FLOW: Preprocessing Module: CvtColor.1 ...
+Execute       set_default_model CvtColor.1 
+Execute       cdfg_preprocess -model CvtColor.1 
+Execute       rtl_gen_preprocess CvtColor.1 
+INFO-FLOW: Preprocessing Module: Mat2AXIvideo ...
+Execute       set_default_model Mat2AXIvideo 
+Execute       cdfg_preprocess -model Mat2AXIvideo 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+INFO-FLOW: Preprocessing Module: sobel_edge_detect ...
+Execute       set_default_model sobel_edge_detect 
+Execute       cdfg_preprocess -model sobel_edge_detect 
+Execute       rtl_gen_preprocess sobel_edge_detect 
+INFO-FLOW: Model list for synthesis: Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Block__proc 
+Execute       schedule -model Block__proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.17 sec.
+INFO: [HLS 200-111]  Elapsed time: 44.86 seconds; current allocated memory: 297.772 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling Block__proc.
+Execute       set_default_model Block__proc 
+Execute       bind -model Block__proc 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Block__proc
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.155 seconds; current allocated memory: 297.828 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.bind.adb -f 
+INFO-FLOW: Finish binding Block__proc.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model AXIvideo2Mat 
+Execute       schedule -model AXIvideo2Mat 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.507 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.633 seconds; current allocated memory: 298.061 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+Command       report done; 0.157 sec.
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.sched.adb -f 
+INFO-FLOW: Finish scheduling AXIvideo2Mat.
+Execute       set_default_model AXIvideo2Mat 
+Execute       bind -model AXIvideo2Mat 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=AXIvideo2Mat
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 298.410 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.bind.adb -f 
+INFO-FLOW: Finish binding AXIvideo2Mat.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CvtColor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model CvtColor 
+Execute       schedule -model CvtColor 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+WARNING: [SCHED 204-21] Estimated clock period (12.563ns) exceeds the target (target clock period: 13.5ns, clock uncertainty: 1.6875ns, effective delay budget: 11.8125ns).
+WARNING: [SCHED 204-21] The critical path in module 'CvtColor' consists of the following:
+	'mul' operation of DSP[55] ('r.V', C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1495->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) [53]  (3.36 ns)
+	'add' operation of DSP[55] ('ret.V', C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1497->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) [55]  (3.02 ns)
+	'add' operation of DSP[57] ('ret.V', C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1497->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) [57]  (3.02 ns)
+	'add' operation ('__Val2__', C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:409->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1498->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) [61]  (1.92 ns)
+	'select' operation ('__Val2__', C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:409->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_types.h:500->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1498->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1545->C:/Xilinx/Vivado/2018.3/common/technology/autopilot/hls/hls_video_imgproc.h:1972) [66]  (1.25 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.52 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.722 seconds; current allocated memory: 298.667 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.sched.adb -f 
+INFO-FLOW: Finish scheduling CvtColor.
+Execute       set_default_model CvtColor 
+Execute       bind -model CvtColor 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=CvtColor
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.244 seconds; current allocated memory: 298.936 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.bind.adb -f 
+INFO-FLOW: Finish binding CvtColor.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Filter2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Filter2D 
+Execute       schedule -model Filter2D 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.758 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.981 seconds; current allocated memory: 300.293 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.verbose.sched.rpt -verbose -f 
+Command       report done; 0.284 sec.
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.sched.adb -f 
+Command       db_write done; 0.204 sec.
+INFO-FLOW: Finish scheduling Filter2D.
+Execute       set_default_model Filter2D 
+Execute       bind -model Filter2D 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Filter2D
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.295 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.835 seconds; current allocated memory: 301.543 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.verbose.bind.rpt -verbose -f 
+Command       report done; 0.438 sec.
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.bind.adb -f 
+Command       db_write done; 0.204 sec.
+INFO-FLOW: Finish binding Filter2D.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Sobel 
+Execute       schedule -model Sobel 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.784 seconds; current allocated memory: 301.737 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.sched.adb -f 
+INFO-FLOW: Finish scheduling Sobel.
+Execute       set_default_model Sobel 
+Execute       bind -model Sobel 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Sobel
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.161 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.281 seconds; current allocated memory: 301.811 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.verbose.bind.rpt -verbose -f 
+Command       report done; 0.288 sec.
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.bind.adb -f 
+INFO-FLOW: Finish binding Sobel.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CvtColor_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model CvtColor.1 
+Execute       schedule -model CvtColor.1 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.382 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.805 seconds; current allocated memory: 302.030 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.sched.adb -f 
+INFO-FLOW: Finish scheduling CvtColor.1.
+Execute       set_default_model CvtColor.1 
+Execute       bind -model CvtColor.1 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=CvtColor.1
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.232 seconds; current allocated memory: 302.175 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.bind.adb -f 
+INFO-FLOW: Finish binding CvtColor.1.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Mat2AXIvideo 
+Execute       schedule -model Mat2AXIvideo 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.218 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 302.303 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.sched.adb -f 
+INFO-FLOW: Finish scheduling Mat2AXIvideo.
+Execute       set_default_model Mat2AXIvideo 
+Execute       bind -model Mat2AXIvideo 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=Mat2AXIvideo
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.194 seconds; current allocated memory: 302.473 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.bind.adb -f 
+INFO-FLOW: Finish binding Mat2AXIvideo.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sobel_edge_detect' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model sobel_edge_detect 
+Execute       schedule -model sobel_edge_detect 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.228 seconds; current allocated memory: 302.629 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.verbose.sched.rpt -verbose -f 
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.sched.adb -f 
+INFO-FLOW: Finish scheduling sobel_edge_detect.
+Execute       set_default_model sobel_edge_detect 
+Execute       bind -model sobel_edge_detect 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=sobel_edge_detect
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.516 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.637 seconds; current allocated memory: 303.144 MB.
+Execute       report -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.verbose.bind.rpt -verbose -f 
+Command       report done; 0.42 sec.
+Execute       db_write -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.bind.adb -f 
+INFO-FLOW: Finish binding sobel_edge_detect.
+Execute       get_model_list sobel_edge_detect -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess Block__proc 
+Execute       rtl_gen_preprocess AXIvideo2Mat 
+Execute       rtl_gen_preprocess CvtColor 
+Execute       rtl_gen_preprocess Filter2D 
+Execute       rtl_gen_preprocess Sobel 
+Execute       rtl_gen_preprocess CvtColor.1 
+Execute       rtl_gen_preprocess Mat2AXIvideo 
+Execute       rtl_gen_preprocess sobel_edge_detect 
+INFO-FLOW: Model list for RTL generation: Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Block_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Block__proc -vendor xilinx -mg_file C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.611 seconds; current allocated memory: 303.375 MB.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Block__proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/systemc/Block_proc -synmodules Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect 
+Execute       gen_rtl Block__proc -style xilinx -f -lang vhdl -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/vhdl/Block_proc 
+Execute       gen_rtl Block__proc -style xilinx -f -lang vlog -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/verilog/Block_proc 
+Execute       gen_tb_info Block__proc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc -p C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db 
+Execute       report -model Block__proc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/Block_proc_csynth.rpt -f 
+Execute       report -model Block__proc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/Block_proc_csynth.xml -f -x 
+Execute       report -model Block__proc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.verbose.rpt -verbose -f 
+Execute       db_write -model Block__proc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2Mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model AXIvideo2Mat -vendor xilinx -mg_file C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2Mat'.
+INFO: [HLS 200-111]  Elapsed time: 0.376 seconds; current allocated memory: 304.378 MB.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/systemc/AXIvideo2Mat -synmodules Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vhdl -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/vhdl/AXIvideo2Mat 
+Execute       gen_rtl AXIvideo2Mat -style xilinx -f -lang vlog -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/verilog/AXIvideo2Mat 
+Execute       gen_tb_info AXIvideo2Mat -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat -p C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db 
+Execute       report -model AXIvideo2Mat -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/AXIvideo2Mat_csynth.rpt -f 
+Execute       report -model AXIvideo2Mat -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/AXIvideo2Mat_csynth.xml -f -x 
+Execute       report -model AXIvideo2Mat -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.verbose.rpt -verbose -f 
+Command       report done; 0.121 sec.
+Execute       db_write -model AXIvideo2Mat -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CvtColor' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model CvtColor -vendor xilinx -mg_file C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'sobel_edge_detect_mul_mul_22ns_8ns_29_1_1' to 'sobel_edge_detectbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_edge_detect_mac_muladd_23ns_8ns_29ns_30_1_1' to 'sobel_edge_detectcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_edge_detect_mac_muladd_20ns_8ns_29ns_29_1_1' to 'sobel_edge_detectdEe' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sobel_edge_detectbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_edge_detectcud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sobel_edge_detectdEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CvtColor'.
+Command       create_rtl_model done; 0.122 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.656 seconds; current allocated memory: 304.874 MB.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       gen_rtl CvtColor -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/systemc/CvtColor -synmodules Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect 
+Execute       gen_rtl CvtColor -style xilinx -f -lang vhdl -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/vhdl/CvtColor 
+Execute       gen_rtl CvtColor -style xilinx -f -lang vlog -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/verilog/CvtColor 
+Execute       gen_tb_info CvtColor -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor -p C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db 
+Execute       report -model CvtColor -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/CvtColor_csynth.rpt -f 
+Execute       report -model CvtColor -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/CvtColor_csynth.xml -f -x 
+Execute       report -model CvtColor -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.verbose.rpt -verbose -f 
+Execute       db_write -model CvtColor -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.adb -f 
+Command       db_write done; 0.105 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Filter2D' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Filter2D -vendor xilinx -mg_file C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_0_val_3' to 'Filter2D_k_buf_0_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_0_val_4' to 'Filter2D_k_buf_0_fYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_0_val_5' to 'Filter2D_k_buf_0_g8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_1_val_3' to 'Filter2D_k_buf_1_hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_1_val_4' to 'Filter2D_k_buf_1_ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_1_val_5' to 'Filter2D_k_buf_1_jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_2_val_3' to 'Filter2D_k_buf_2_kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_2_val_4' to 'Filter2D_k_buf_2_lbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Filter2D_k_buf_2_val_5' to 'Filter2D_k_buf_2_mb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'sobel_edge_detect_mux_32_8_1_1' to 'sobel_edge_detectncg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'sobel_edge_detectncg': 18 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Filter2D'.
+Command       create_rtl_model done; 0.313 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.832 seconds; current allocated memory: 307.353 MB.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Filter2D -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/systemc/Filter2D -synmodules Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect 
+Execute       gen_rtl Filter2D -style xilinx -f -lang vhdl -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/vhdl/Filter2D 
+Execute       gen_rtl Filter2D -style xilinx -f -lang vlog -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/verilog/Filter2D 
+Execute       gen_tb_info Filter2D -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D -p C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db 
+Command       gen_tb_info done; 0.117 sec.
+Execute       report -model Filter2D -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/Filter2D_csynth.rpt -f 
+Command       report done; 0.115 sec.
+Execute       report -model Filter2D -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/Filter2D_csynth.xml -f -x 
+Command       report done; 0.107 sec.
+Execute       report -model Filter2D -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.verbose.rpt -verbose -f 
+Command       report done; 0.556 sec.
+Execute       db_write -model Filter2D -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.adb -f 
+Command       db_write done; 0.384 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Sobel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Sobel -vendor xilinx -mg_file C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Sobel'.
+INFO: [HLS 200-111]  Elapsed time: 2.14 seconds; current allocated memory: 308.321 MB.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Sobel -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/systemc/Sobel -synmodules Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect 
+Execute       gen_rtl Sobel -style xilinx -f -lang vhdl -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/vhdl/Sobel 
+Execute       gen_rtl Sobel -style xilinx -f -lang vlog -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/verilog/Sobel 
+Execute       gen_tb_info Sobel -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel -p C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db 
+Execute       report -model Sobel -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/Sobel_csynth.rpt -f 
+Execute       report -model Sobel -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/Sobel_csynth.xml -f -x 
+Execute       report -model Sobel -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.verbose.rpt -verbose -f 
+Command       report done; 0.313 sec.
+Execute       db_write -model Sobel -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CvtColor_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model CvtColor.1 -vendor xilinx -mg_file C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CvtColor_1'.
+INFO: [HLS 200-111]  Elapsed time: 0.668 seconds; current allocated memory: 308.712 MB.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       gen_rtl CvtColor.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/systemc/CvtColor_1 -synmodules Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect 
+Execute       gen_rtl CvtColor.1 -style xilinx -f -lang vhdl -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/vhdl/CvtColor_1 
+Execute       gen_rtl CvtColor.1 -style xilinx -f -lang vlog -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/verilog/CvtColor_1 
+Execute       gen_tb_info CvtColor.1 -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1 -p C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db 
+Execute       report -model CvtColor.1 -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/CvtColor_1_csynth.rpt -f 
+Execute       report -model CvtColor.1 -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/CvtColor_1_csynth.xml -f -x 
+Execute       report -model CvtColor.1 -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.verbose.rpt -verbose -f 
+Execute       db_write -model CvtColor.1 -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.adb -f 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Mat2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model Mat2AXIvideo -vendor xilinx -mg_file C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Mat2AXIvideo'.
+INFO: [HLS 200-111]  Elapsed time: 0.504 seconds; current allocated memory: 309.531 MB.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/systemc/Mat2AXIvideo -synmodules Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vhdl -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/vhdl/Mat2AXIvideo 
+Execute       gen_rtl Mat2AXIvideo -style xilinx -f -lang vlog -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/verilog/Mat2AXIvideo 
+Execute       gen_tb_info Mat2AXIvideo -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo -p C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db 
+Execute       report -model Mat2AXIvideo -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/Mat2AXIvideo_csynth.rpt -f 
+Execute       report -model Mat2AXIvideo -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/Mat2AXIvideo_csynth.xml -f -x 
+Execute       report -model Mat2AXIvideo -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.verbose.rpt -verbose -f 
+Execute       db_write -model Mat2AXIvideo -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.adb -f 
+Command       db_write done; 0.11 sec.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sobel_edge_detect' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model sobel_edge_detect -vendor xilinx -mg_file C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_out_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'sobel_edge_detect/stream_out_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'sobel_edge_detect' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'start_for_CvtColor_U0' to 'start_for_CvtColoocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_CvtColor_1_U0' to 'start_for_CvtColopcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_Mat2AXIvideo_U0' to 'start_for_Mat2AXIqcK' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sobel_edge_detect'.
+Command       create_rtl_model done; 0.336 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.812 seconds; current allocated memory: 310.471 MB.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       gen_rtl sobel_edge_detect -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/systemc/sobel_edge_detect -synmodules Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect 
+Execute       gen_rtl sobel_edge_detect -istop -style xilinx -f -lang vhdl -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/vhdl/sobel_edge_detect 
+Execute       gen_rtl sobel_edge_detect -istop -style xilinx -f -lang vlog -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/verilog/sobel_edge_detect 
+Execute       export_constraint_db -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.constraint.tcl -f -tool general 
+Execute       report -model sobel_edge_detect -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.design.xml -verbose -f -dv 
+Command       report done; 0.414 sec.
+Execute       report -model sobel_edge_detect -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.sdaccel.xml -verbose -f -sdaccel 
+Command       report done; 0.113 sec.
+Execute       gen_tb_info sobel_edge_detect -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect -p C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db 
+Execute       report -model sobel_edge_detect -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/sobel_edge_detect_csynth.rpt -f 
+Execute       report -model sobel_edge_detect -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/syn/report/sobel_edge_detect_csynth.xml -f -x 
+Execute       report -model sobel_edge_detect -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.verbose.rpt -verbose -f 
+Command       report done; 0.381 sec.
+Execute       db_write -model sobel_edge_detect -o C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.adb -f 
+Command       db_write done; 0.133 sec.
+Execute       sc_get_clocks sobel_edge_detect 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain sobel_edge_detect 
+INFO-FLOW: Model list for RTL component generation: Block__proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor.1 Mat2AXIvideo sobel_edge_detect
+INFO-FLOW: Handling components in module [Block_proc] ... 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+INFO-FLOW: Handling components in module [AXIvideo2Mat] ... 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+INFO-FLOW: Handling components in module [CvtColor] ... 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+INFO-FLOW: Found component sobel_edge_detectbkb.
+INFO-FLOW: Append model sobel_edge_detectbkb
+INFO-FLOW: Found component sobel_edge_detectcud.
+INFO-FLOW: Append model sobel_edge_detectcud
+INFO-FLOW: Found component sobel_edge_detectdEe.
+INFO-FLOW: Append model sobel_edge_detectdEe
+INFO-FLOW: Handling components in module [Filter2D] ... 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+INFO-FLOW: Found component sobel_edge_detectncg.
+INFO-FLOW: Append model sobel_edge_detectncg
+INFO-FLOW: Found component Filter2D_k_buf_0_eOg.
+INFO-FLOW: Append model Filter2D_k_buf_0_eOg
+INFO-FLOW: Handling components in module [Sobel] ... 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+INFO-FLOW: Handling components in module [CvtColor_1] ... 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+INFO-FLOW: Handling components in module [Mat2AXIvideo] ... 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+INFO-FLOW: Handling components in module [sobel_edge_detect] ... 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+INFO-FLOW: Found component fifo_w10_d2_A.
+INFO-FLOW: Append model fifo_w10_d2_A
+INFO-FLOW: Found component fifo_w11_d2_A.
+INFO-FLOW: Append model fifo_w11_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w10_d2_A.
+INFO-FLOW: Append model fifo_w10_d2_A
+INFO-FLOW: Found component fifo_w11_d2_A.
+INFO-FLOW: Append model fifo_w11_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component fifo_w8_d2_A.
+INFO-FLOW: Append model fifo_w8_d2_A
+INFO-FLOW: Found component start_for_CvtColoocq.
+INFO-FLOW: Append model start_for_CvtColoocq
+INFO-FLOW: Found component start_for_Sobel_U0.
+INFO-FLOW: Append model start_for_Sobel_U0
+INFO-FLOW: Found component start_for_CvtColopcA.
+INFO-FLOW: Append model start_for_CvtColopcA
+INFO-FLOW: Found component start_for_Mat2AXIqcK.
+INFO-FLOW: Append model start_for_Mat2AXIqcK
+INFO-FLOW: Append model Block_proc
+INFO-FLOW: Append model AXIvideo2Mat
+INFO-FLOW: Append model CvtColor
+INFO-FLOW: Append model Filter2D
+INFO-FLOW: Append model Sobel
+INFO-FLOW: Append model CvtColor_1
+INFO-FLOW: Append model Mat2AXIvideo
+INFO-FLOW: Append model sobel_edge_detect
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: sobel_edge_detectbkb sobel_edge_detectcud sobel_edge_detectdEe sobel_edge_detectncg Filter2D_k_buf_0_eOg fifo_w10_d2_A fifo_w11_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w10_d2_A fifo_w11_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A fifo_w8_d2_A start_for_CvtColoocq start_for_Sobel_U0 start_for_CvtColopcA start_for_Mat2AXIqcK Block_proc AXIvideo2Mat CvtColor Filter2D Sobel CvtColor_1 Mat2AXIvideo sobel_edge_detect
+INFO-FLOW: To file: write model sobel_edge_detectbkb
+INFO-FLOW: To file: write model sobel_edge_detectcud
+INFO-FLOW: To file: write model sobel_edge_detectdEe
+INFO-FLOW: To file: write model sobel_edge_detectncg
+INFO-FLOW: To file: write model Filter2D_k_buf_0_eOg
+INFO-FLOW: To file: write model fifo_w10_d2_A
+INFO-FLOW: To file: write model fifo_w11_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w10_d2_A
+INFO-FLOW: To file: write model fifo_w11_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model fifo_w8_d2_A
+INFO-FLOW: To file: write model start_for_CvtColoocq
+INFO-FLOW: To file: write model start_for_Sobel_U0
+INFO-FLOW: To file: write model start_for_CvtColopcA
+INFO-FLOW: To file: write model start_for_Mat2AXIqcK
+INFO-FLOW: To file: write model Block_proc
+INFO-FLOW: To file: write model AXIvideo2Mat
+INFO-FLOW: To file: write model CvtColor
+INFO-FLOW: To file: write model Filter2D
+INFO-FLOW: To file: write model Sobel
+INFO-FLOW: To file: write model CvtColor_1
+INFO-FLOW: To file: write model Mat2AXIvideo
+INFO-FLOW: To file: write model sobel_edge_detect
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.187 sec.
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.241 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.244 sec.
+Command       ap_source done; 0.244 sec.
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=13.500 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+Command       ap_source done; 0.22 sec.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'Filter2D_k_buf_0_eOg_ram (RAM)' using block RAMs.
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+INFO: [RTMG 210-285] Implementing FIFO 'img0_rows_V_c_U(fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img0_cols_V_c_U(fifo_w11_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img0_data_stream_0_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img0_data_stream_1_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img0_data_stream_2_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img0_rows_V_c10_U(fifo_w10_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img0_cols_V_c11_U(fifo_w11_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img1_data_stream_0_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img1_data_stream_1_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img1_data_stream_2_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img2_data_stream_0_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img2_data_stream_1_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img2_data_stream_2_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img3_data_stream_0_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img3_data_stream_1_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'img3_data_stream_2_s_U(fifo_w8_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_CvtColoocq_U(start_for_CvtColoocq)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Sobel_U0_U(start_for_Sobel_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_CvtColopcA_U(start_for_CvtColopcA)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Mat2AXIqcK_U(start_for_Mat2AXIqcK)' using Shift Registers.
+Command       ap_source done; 0.939 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command             ap_source done; 0.11 sec.
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.159 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.163 sec.
+Command       ap_source done; 0.163 sec.
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=sobel_edge_detect xml_exists=0
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.constraint.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=30
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=14
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=1 #modelList=33 #gSsdmPorts=30
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_export -xo 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.constraint.tcl 
+Execute       sc_get_clocks sobel_edge_detect 
+Execute       source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 380.785 ; gain = 313.629
+INFO: [SYSC 207-301] Generating SystemC RTL for sobel_edge_detect.
+INFO: [VHDL 208-304] Generating VHDL RTL for sobel_edge_detect.
+INFO: [VLOG 209-307] Generating Verilog RTL for sobel_edge_detect.
+Command     autosyn done; 20.194 sec.
+Execute     get_part 
+Execute     get_config_export -sdx_tcl 
+Command   csynth_design done; 62.391 sec.
+Command ap_source done; 63.126 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1 opened at Sat Feb 29 19:05:49 +0100 2020
+Execute     config_clock -quiet -name default -period 13.5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.5ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.13 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.196 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.2 sec.
+Command     ap_source done; 0.2 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.384 sec.
+Execute   export_design -rtl verilog -format ip_catalog -description Sobel -vendor Ugo -version 1.0 -display_name Sobel 
+Execute     get_config_export -acc 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -kernel_drc 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sdaccel 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -xo 
+Execute     config_export -description=Sobel -display_name=Sobel -format=ip_catalog -rtl=verilog -vendor=Ugo -version=1.0 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog -vendor Ugo -version 1.0 -description Sobel -display_name Sobel
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_sdx -target 
+Execute     get_config_rtl -auto_prefix 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -tool vivado -rtl verilog -sdx-target none
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.12 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.181 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.185 sec.
+Command     ap_source done; 0.185 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=13.500 (was NA)
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -sdx-target none -tool Vivado -impltomg_flag
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.125 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.182 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.188 sec.
+Command     ap_source done; 0.188 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=sobel_edge_detect xml_exists=1
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Block_proc.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/AXIvideo2Mat.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Filter2D.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Sobel.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/CvtColor_1.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/Mat2AXIvideo.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.compgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.constraint.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=30
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=14
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=0 g_has_adaptors=false generate_bd_files=1 #modelList=33 #gSsdmPorts=30
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_export -xo 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.constraint.tcl 
+Execute     sc_get_clocks sobel_edge_detect 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+Execute     get_config_sdx -profile 
+Execute     ::config_rtl 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist: C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=30
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_sdx -target 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=sobel_edge_detect
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=sobel_edge_detect
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_bd_script
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.constraint.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.constraint.tcl 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/sobel_edge_detect.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       copy-tb-rtl-files
+INFO-FLOW: DBG:CMD:       copy-tb-data-files
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.138 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.19 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.194 sec.
+Command     ap_source done; 0.194 sec.
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO-FLOW: DBG:CMD:     exec C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/impl/ip/pack.bat
+Command   export_design done; 21.994 sec.
+Command ap_source done; 22.399 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1 opened at Fri Apr 24 20:50:27 +0200 2020
+Execute     config_clock -quiet -name default -period 13.5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 13.5ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source done; 0.264 sec.
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.394 sec.
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.4 sec.
+Command     ap_source done; 0.402 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.3/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.12 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Command     set_part done; 0.234 sec.
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Execute     config_export -description=Sobel 
+Execute     config_export -display_name=Sobel 
+Execute     config_export -format=ip_catalog 
+Execute     config_export -rtl=verilog 
+Execute     config_export -vendor=Ugo 
+Execute     config_export -version=1.0 
+Command   open_solution done; 0.903 sec.
+Execute   csim_design -quiet 
+Execute     source C:/Users/ugo/Desktop/Progetti/sobel/sobel/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted C:/Users/ugo/Desktop/Progetti/sobel/sobel_edge_detect_test.cpp 
+Execute     is_xip C:/Users/ugo/Desktop/Progetti/sobel/sobel_edge_detect_test.cpp 
+Execute     is_encrypted C:/Users/ugo/Desktop/Progetti/sobel/rover.bmp 
+Execute     is_xip C:/Users/ugo/Desktop/Progetti/sobel/rover.bmp 
+Execute     is_encrypted C:/Users/ugo/Desktop/Progetti/sobel/sobel_edge_detect.cpp 
+Execute     is_xip C:/Users/ugo/Desktop/Progetti/sobel/sobel_edge_detect.cpp 
+Execute     get_default_platform 
+Execute     source run_sim.tcl 

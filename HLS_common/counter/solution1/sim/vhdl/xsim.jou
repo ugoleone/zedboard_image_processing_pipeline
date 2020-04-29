@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 15 12:02:31 2019
+# Process ID: 2284
+# Current directory: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl
+# Command line: xsim.exe -mode tcl -source {xsim.dir/contatore_no_io/xsim_script.tcl}
+# Log file: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl/xsim.log
+# Journal file: C:/Users/ugo/Desktop/Progetti/counter/solution1/sim/vhdl\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/contatore_no_io/xsim_script.tcl
+source contatore_no_io.tcl

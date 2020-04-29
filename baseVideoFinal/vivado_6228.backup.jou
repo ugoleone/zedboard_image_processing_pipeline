@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Wed Apr 29 16:53:52 2020
+# Process ID: 6228
+# Current directory: C:/Users/ugo/Desktop/baseVideoFinal
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10596 C:\Users\ugo\Desktop\baseVideoFinal\baseVideo.xpr
+# Log file: C:/Users/ugo/Desktop/baseVideoFinal/vivado.log
+# Journal file: C:/Users/ugo/Desktop/baseVideoFinal\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ugo/Desktop/baseVideoFinal/baseVideo.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ugo/Desktop/baseVideoFinal/baseVideo.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { ov7670_axi_stream_ca_1_m_axis } ]
+disconnect_bd_intf_net [get_bd_intf_net ov7670_axi_stream_ca_1_m_axis] [get_bd_intf_pins system_ila_0/SLOT_0_AXIS]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+endgroup
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { data_in_V_0_1 } ]
+disconnect_bd_net [get_bd_net data_in_V_0_1] [get_bd_pins system_ila_0/probe0]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets rst_design_1_100M_peripheral_aresetn] [get_bd_cells rst_design_1_100M]
+regenerate_bd_layout
+delete_bd_objs [get_bd_cells gaussian_filter_0]
+regenerate_bd_layout
+update_module_reference design_1_ov7670_axi_stream_ca_1_0

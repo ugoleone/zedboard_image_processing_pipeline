@@ -1,0 +1,7 @@
+Running: xsim.dir/contatore_no_io/xsimk.exe -simmode gui -wdb contatore_no_io.wdb -simrunnum 0 -socket 51517
+Design successfully loaded
+Design Loading Memory Usage: 5380 KB (Peak: 5380 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 6764 KB (Peak: 6764 KB)
+Simulation CPU Usage: 108 ms

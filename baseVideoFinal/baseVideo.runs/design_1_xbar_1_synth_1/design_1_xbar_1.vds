@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Wed Apr 29 17:50:44 2020
+# Process ID: 2748
+# Current directory: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.runs/design_1_xbar_1_synth_1
+# Command line: vivado.exe -log design_1_xbar_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_1.tcl
+# Log file: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.runs/design_1_xbar_1_synth_1/design_1_xbar_1.vds
+# Journal file: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.runs/design_1_xbar_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_xbar_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/Progetti/counter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/Progetti/gaussian'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ugo/Desktop/Progetti/sobel'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 260.676 ; gain = 6.020
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_xbar_1, cache-ID = ca44433e2febb61c.
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 29 17:50:59 2020...

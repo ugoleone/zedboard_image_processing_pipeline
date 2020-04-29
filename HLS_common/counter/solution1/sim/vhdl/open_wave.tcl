@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database contatore_no_io.wdb

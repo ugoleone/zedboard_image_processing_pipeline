@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gaussian_filter.cpp" path="C:\Users\ugo\Desktop\Progetti\gaussian\gaussian_filter.cpp"/>
+    <originFiles name="gaussian_filter.h" path="C:\Users\ugo\Desktop\Progetti\gaussian\gaussian_filter.h"/>
+  </source>
+  <testbench>
+    <originFiles name="gaussian_filter_tb.cpp" path="C:\Users\ugo\Desktop\Progetti\gaussian\gaussian_filter_tb.cpp"/>
+    <originFiles name="rover.bmp" path="C:\Users\ugo\Desktop\Progetti\gaussian\rover.bmp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

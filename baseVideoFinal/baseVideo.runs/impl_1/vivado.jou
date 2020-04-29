@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Wed Apr 29 18:22:50 2020
+# Process ID: 8472
+# Current directory: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.runs/impl_1
+# Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.runs/impl_1/design_1_wrapper.vdi
+# Journal file: C:/Users/ugo/Desktop/1/baseVideoFinal/baseVideo.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

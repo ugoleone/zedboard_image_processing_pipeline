@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# Vivado v2018.3.1 (64-bit)
+# SW Build 2489853 on Tue Mar 26 04:20:25 MDT 2019
+# IP Build 2486929 on Tue Mar 26 06:44:21 MDT 2019
+# Start of session at: Sat Mar 28 16:24:23 2020
+# Process ID: 10756
+# Current directory: C:/Users/ugo/Desktop/baseVideo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9340 C:\Users\ugo\Desktop\baseVideo\baseVideo.xpr
+# Log file: C:/Users/ugo/Desktop/baseVideo/vivado.log
+# Journal file: C:/Users/ugo/Desktop/baseVideo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ugo/Desktop/baseVideo/baseVideo.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/design_1.bd}
+disconnect_bd_net /Const_1_dout [get_bd_ports ovReset]
+connect_bd_net [get_bd_ports ovReset] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+save_bd_design
+reset_run design_1_v_tpg_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+file copy -force C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/design_1_wrapper.sysdef C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/ugo/Desktop/baseVideo/baseVideo.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv Ugo:hls:axisTester:1.1 axisTester_0
+endgroup
+set_property location {7 2054 874} [get_bd_cells axisTester_0]
+connect_bd_net [get_bd_ports PCLK] [get_bd_pins axisTester_0/ap_clk]
+connect_bd_net [get_bd_pins axisTester_0/ap_rst_n] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { ov7670_grayscale_0_outStream_V_V } ]
+disconnect_bd_intf_net [get_bd_intf_net ov7670_grayscale_0_outStream_V_V] [get_bd_intf_pins system_ila_0/SLOT_1_AXIS]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets ov7670_grayscale_0_outStream_V_V]
+connect_bd_intf_net [get_bd_intf_pins axisTester_0/outputStream_V_V] [get_bd_intf_pins pattern_generator_cr_0/inStream_V_V]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_intf_nets {axisTester_0_outputStream_V_V}]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:debug -dict [list \
+                                                          [get_bd_intf_nets axisTester_0_outputStream_V_V] {AXIS_SIGNALS "Data and Trigger" CLK_SRC "/PCLK" SYSTEM_ILA "Auto" APC_EN "0" } \
+                                                         ]
+endgroup
+save_bd_design
+validate_bd_design
+reset_run design_1_system_ila_0_1_synth_1
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/design_1_wrapper.sysdef C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv Ugo:hls:axisTester:1.3 [get_ips  design_1_axisTester_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_axisTester_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_intf_nets { axisTester_0_outputStream_V_V } ]
+disconnect_bd_intf_net [get_bd_intf_net axisTester_0_outputStream_V_V] [get_bd_intf_pins system_ila_0/SLOT_1_AXIS]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+endgroup
+delete_bd_objs [get_bd_intf_nets LF_valid_to_AXIS_0_outputStream_V_V]
+delete_bd_objs [get_bd_intf_nets axisTester_0_outputStream_V_V]
+connect_bd_intf_net [get_bd_intf_pins axisTester_0/outputStream_V_V] [get_bd_intf_pins ov7670_grayscale_0/inStream_V_V]
+connect_bd_intf_net [get_bd_intf_pins ov7670_grayscale_0/outStream_V_V] [get_bd_intf_pins pattern_generator_cr_0/inStream_V_V]
+save_bd_design
+reset_run design_1_system_ila_0_1_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+file copy -force C:/Users/ugo/Desktop/baseVideo/baseVideo.runs/impl_1/design_1_wrapper.sysdef C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk -hwspec C:/Users/ugo/Desktop/baseVideo/baseVideo.sdk/design_1_wrapper.hdf

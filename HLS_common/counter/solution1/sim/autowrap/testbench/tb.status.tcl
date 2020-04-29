@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName contatore_no_io.cpp_pre.cpp.tb.cpp

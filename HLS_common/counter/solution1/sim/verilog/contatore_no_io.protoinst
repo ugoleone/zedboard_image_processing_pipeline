@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"contatore_no_io": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="9" filename="counter/contatore_no_io.cpp" linenumber="12" name="counter_value_assign" contextFuncName="contatore_no_io" moduleName="contatore_no_io" rtlName="counter_value_assign_fu_61_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\ugo\Desktop\Progetti"><\/item>
+<item  id="10" filename="counter/contatore_no_io.cpp" linenumber="13" name="tmp" contextFuncName="contatore_no_io" moduleName="contatore_no_io" rtlName="tmp_fu_68_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="C:\Users\ugo\Desktop\Progetti"><\/item>
+<item  id="14" filename="counter/contatore_no_io.cpp" linenumber="14" name="val_assign" contextFuncName="contatore_no_io" moduleName="contatore_no_io" rtlName="val_assign_fu_79_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="C:\Users\ugo\Desktop\Progetti"><\/item>
+<\/annotationInfo>
+</annotationInfo>

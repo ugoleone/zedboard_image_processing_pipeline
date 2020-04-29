@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/tpg_sdk/src/xiic_selftest_example.c" element2="/tpg_sdk/src/xiic_slave_example.c" element3="/tpg_sdk/src/xiic_tempsensor_example.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1586254897207"/>
+</session>
